@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Containers Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      font-family: Courier New, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('pic 4 sw2.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .container,
+    .form-control,
+    .form-check,
+    .col, select{ 
+      border-radius: 5px;
+    } 
+    .form-check input[type="checkbox"],
+    .form-check input[type="radio"]{
+      border-radius: 5px; 
+    }
+    .container{
+      position: relative;
+      padding: 20px; 
+      border-radius: 10px;
+      background-color: #9699BE5E;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+      <h1 class="mb-4 text-center"><b> - Robotics Club Registration Form - <b></h1>
+    <div>
+      <form>
+        <div class="row mb-3">
+          <div class="col-sm-12 col-md-6 form group">
+            <label for="exampleName">Name</label>
+            <input type="text" placeholder="Input your Full Name.." class="form-control">
+          </div>
+          <div class="col-sm-12 col-md-6 form group">
+            <label for="exampleAge">Age</label>
+            <input type="text" placeholder="Input your Age.." class="form-control">
+          </div>
+        </div>
+        
+        <div class="row mb-3">
+          <div class="col-sm-12 col-md-6 form group">
+            <label for="exampleEmail">Email Address</label>
+            <input type="text" placeholder="Input your Email Address.." class="form-control">
+          </div>
+          <div class="col-sm-12 col-md-6 form group">
+            <label for="examplePhonenumber">Phone Number</label>
+            <input type="text" placeholder="Input your Phone Number.." class="form-control">
+          </div>
+        </div>
+        
+          <div class="container mt-5">
+            <h5>Preferred Robotics Topics</h5>
+              <div class="form-check mb-3" id="exampleCheck1">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Programming</label><br>
+              </div>
+              <div class="form-check mb-3" id="exampleCheck2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck1">Electronics</label><br>
+              </div>
+              <div class="form-check mb-3" id="exampleCheck3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck1">Mechanical Design</label><br>
+              </div>
+          </div>
+          
+          <div class="container mt-5">
+            <h5>Robotics Experience Level</h5>
+              <div class="form-check mb-3" id="exampleCheck1">
+                <input type="radio" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Beginner</label><br>
+              </div>
+              <div class="form-check mb-3" id="exampleCheck2">
+                <input type="radio" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck1">Intermediate</label><br>
+              </div>
+              <div class="form-check mb-3" id="exampleCheck3">
+                <input type="radio" class="form-check-input" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck1">Advanced</label><br>
+              </div>
+          </div>
+
+              <div>
+                <label for="exampleProject"><h5>Preferred Robotics Project</h5></label><br>
+                <select id="select" name="select">
+                    <option value="୨୧ Projects ୨୧">୨୧ Choose here ୨୧</option>
+                    <option value="Smart Cleaning Robot">Smart Cleaning Robot</option>
+                    <option value="Chess Playing Robot">Chess Playing Robot</option>
+                    <option value="Obstacle Avoiding Robot">Obstacle Avoiding Robot</option>
+                    <option value="Pick up and Place Robot">Pick up and Place Robot</option>
+                </select><br><br>
+              </div>
+
+              <h4>Statement of Interest</h4>
+                  <textarea class="col" style="padding: 20px;" ></textarea><br><br>
+                
+            <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
